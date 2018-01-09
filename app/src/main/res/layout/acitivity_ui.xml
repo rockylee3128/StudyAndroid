@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="332dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="#FF181B24"
         >
@@ -31,12 +31,13 @@
                     android:text="限价单"
                     android:textColor="#FFFFFFFF"
                     android:textSize="13dp"/>
-                <Spinner
+                <ImageButton
                     android:layout_width="6dp"
                     android:layout_height="3dp"
                     android:layout_marginLeft="60dp"
                     android:layout_marginTop="19dp"
-                    android:background="#FFFFFF"></Spinner>
+                    android:src="@mipmap/tobot"
+                    android:background="#FFFFFFF"/>
             </FrameLayout>
             <FrameLayout
                 android:layout_width="wrap_content"
@@ -44,13 +45,14 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal">
                 <EditText
-                    android:layout_width="231dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:background="#101319"/>
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="205dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginRight="5dp"
                     android:src="@mipmap/cancle"
                     android:background="#101319"
                     android:layout_gravity="center_vertical"/>
@@ -112,6 +114,7 @@
                 android:layout_height="wrap_content"
                 android:text="价格"
                 android:textColor="#FFFFFFFF"
+                android:layout_marginLeft="12dp"
                 android:textSize="13dp"/>
             <ImageButton
                 android:layout_width="40dp"
@@ -121,10 +124,11 @@
                 android:src="@mipmap/minus"
                 />
             <EditText
-                android:layout_width="179dp"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginLeft="6dp"
-                android:background="#101319"/>
+                android:background="#101319"
+                android:layout_weight="1"/>
             <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -138,6 +142,7 @@
                 android:layout_marginLeft="6dp"
                 android:background="#FF262B38"
                 android:src="@mipmap/target"
+                android:layout_marginRight="12dp"
                 />
 
         </LinearLayout>
@@ -153,7 +158,8 @@
                 android:layout_height="wrap_content"
                 android:text="数量"
                 android:textColor="#FFFFFFFF"
-                android:textSize="13dp"/>
+                android:textSize="13dp"
+                android:layout_marginLeft="12dp"/>
             <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -162,10 +168,11 @@
                 android:src="@mipmap/minus"
                 />
             <EditText
-                android:layout_width="179dp"
+                android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="6dp"
-                android:background="#101319"/>
+                android:background="#101319"
+                android:layout_weight="1"/>
             <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -179,6 +186,7 @@
                 android:background="#FF262B38"
                 android:layout_marginLeft="6dp"
                 android:src="@mipmap/Proportion"
+                android:layout_marginRight="12dp"
                 />
 
 
@@ -284,13 +292,12 @@
                    android:textColor="#FFFFFFFF"
                    android:textSize="12dp"/>
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
                     android:background="#FFFFFFF"
                     android:layout_marginTop="3dp"
                     android:layout_marginLeft="94dp"
-                    android:src="@mipmap/switch"
-                    />
+                    android:src="@mipmap/switch" />
 
 
 
@@ -302,30 +309,35 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:paddingBottom="10dp">
 
             <Button
-                android:layout_width="149.5dp"
+                android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:background="#FF1860A9"
                 android:text="买入"
                 android:textColor="#FFFFFFFF"
                 android:textSize="15dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
                 />
             <Button
-                android:layout_width="149.5dp"
+                android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="6.5dp"
                 android:background="#FFA67F47"
                 android:text="卖出"
                 android:textColor="#FFFFFFFF"
                 android:textSize="15dp"
+                android:layout_weight="1"
                 />
             <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="6.5dp"
                 android:background="#262B38"
+                android:layout_marginRight="12dp"
                 android:src="@mipmap/order"
                 />
 
