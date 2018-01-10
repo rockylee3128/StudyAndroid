@@ -297,7 +297,7 @@
                     android:background="#FFFFFFF"
                     android:layout_marginTop="3dp"
                     android:layout_marginLeft="94dp"
-                    android:src="@mipmap/switch" />
+                    android:src="@drawable/ic_switch" />
 
 
 
