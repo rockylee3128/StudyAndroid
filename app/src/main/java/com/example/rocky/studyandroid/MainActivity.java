@@ -8,32 +8,52 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import com.example.rocky.studyandroid.model.UIListData;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private UIListData uiListData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        findViewById(R.id.activity_main_text).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(MainActivity.this, Activity1.class));
-//                new AlertDialog.Builder(MainActivity.this).setTitle("Dialog").show();
-//
-//
-//            }
-//        });
-        findViewById(R.id.add).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ActivityAdd.class));
-            }
-        });
+        setupUI(mockData());
+
+
 
         Log.e("rockytext", "MainActivity onCreate");
+    }
+
+
+    private void setupUI(List<UIListData> data) {
+        ListView listView = ((ListView) findViewById(R.id.main_list_view));
+        listView.setAdapter(new UIListAdapter(this, data));
+    }
+
+    private List<UIListData> mockData() {
+        List<UIListData> list = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            UIListData uiListData = new UIListData();
+            uiListData.listName = "房地产" + i;
+            uiListData.listTime = "14:28:03";
+            uiListData.ExpectPrice = 99.1 + (double) i;
+            uiListData.avePrice = 64.12 + (double) i;
+            uiListData.finalPrice = 99.4 + (double) i;
+            uiListData.number = 1000 + i;
+            uiListData.listStatus = "已报";
+            uiListData.listInout = "买入";
+            uiListData.orderStatus = "撤单";
+            list.add(uiListData);
+        }
+        return list;
     }
 
     @Override

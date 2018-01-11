@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ui_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="#FF181B24"
+    android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="130"
+            >
+
+            <TextView
+                android:id="@+id/ui_list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="房地产B"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/ui_list_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="14:28:03"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="75">
+            <TextView
+                android:id="@+id/ui_list_expectprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="99.8"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/ui_list_aveprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="64.12"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="54">
+            <TextView
+                android:id="@+id/ui_list_finalprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="99.4"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/ui_list_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1000"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="42">
+            <TextView
+                android:id="@+id/ui_list_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="已报"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/ui_list_inout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="买入"
+                android:textColor="#FF2F97FF"
+                android:textSize="13dp"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/ui_list_orderstatus"
+            android:layout_width="44dp"
+            android:layout_height="25dp"
+            android:background="#FF1860A9"
+            tools:text="撤单"
+            android:layout_marginRight="18dp"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12dp"
+            />
+</LinearLayout>
